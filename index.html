@@ -16,19 +16,19 @@
         <link href="css/contato.css" rel="stylesheet">
         <link href="css/institucional.css" rel="stylesheet">
         <link href="css/rodape.css" rel="stylesheet">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+        <link href="css/contato_modal.css" rel="styleshee">
+
     </head>
     <body>
         <header class="cabecalho container">
             <img src="img/logo-web.png" alt="Logo da Web Solution" class="cabecalho__logo">
             <nav class="cabecalho__navegacao">
                 <ul>
-                    <li class="cabecalho__link"><a href="#">Sobre</a></li>
-                    <li class="cabecalho__link"><a href="#">Planos</a></li>
-                    <li class="cabecalho__link"><a href="#">Destaques</a></li>
-                    <li class="cabecalho__link"><a href="#">Institucional</a></li>
-                    <li class="cabecalho__link"><a href="contato.html">Contato</a></li>
+                    <li class="cabecalho__link"><a href="#sobre">Sobre</a></li>
+                    <li class="cabecalho__link"><a href="#planos">Planos</a></li>
+                    <li class="cabecalho__link"><a href="#destaques">Destaques</a></li>
+                    <li class="cabecalho__link"><a href="#institucional">Institucional</a></li>
+                    <li class="cabecalho__link"><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,9 +36,9 @@
             <section class="chamada container">
                 <h1 class="chamada__titulo">Aplicativos Na Medida</h1>
                 <p class="chamada__texto">Web Solution tem um jeito inovador de comparar e montar aplicativos para pequenas e médias empresas.</p>
-                <a href="#" class="chamada__botao botao">Conheça os planos</a>
+                <a href="#planos" class="chamada__botao botao">Conheça os planos</a>
             </section>
-            <section class="destaques container">
+            <section class="destaques container" id="destaques">
                 <h2 class="destaques__titulo">Destaques</h2>
                 <a href="#">
                     <figure class="destaques__painel">
@@ -70,7 +70,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="sobre container">
+            <section class="sobre container" id="sobre">
                 <div class="sobre__conteudo">
                     <h2 class="sobre__titulo">Sobre</h2>
                     <p class="sobre__texto">Criamos aplicativos personalizados para <strong class="sobre__texto--destaque">todas as pessoas</strong>!</p>
@@ -89,7 +89,7 @@
                 </div>
                 <img src="img/sobre-apeperia.png" alt="Sobre a Apeperia" class="sobre__imagem">
             </section>
-            <section class="planos container">
+            <section class="planos container" id="planos">
                 <h2 class="planos__titulo">Planos</h2>
                 <ul class="planos__cartoes">
                     <li class="cartao cartao--start">
@@ -100,6 +100,16 @@
                             <p class="cartao__texto">App Web Solution</p>
                             <p class="cartao__texto">1 sistema operacional</p>
                             <a href="" class="cartao__botao cartao__botao--start botao">Assinar plano</a>
+                        </article>
+                    </li>
+                    <li class="cartao cartao--mega">
+                        <h3 class="cartao__titulo">Mega</h3>
+                        <p class="cartao__preco"><em>R$ 1000</em></p>
+                        <article class="cartao__conteudo">
+                            <p class="cartao__texto">10 manutenções mensais</p>
+                            <p class="cartao__texto">App Web Solution</p>
+                            <p class="cartao__texto">2 sistemas operacionais</p>
+                            <a href="" class="cartao__botao cartao__botao--mega botao">Assinar plano</a>
                         </article>
                     </li>
                     <li class="cartao cartao--ultra">
@@ -113,24 +123,26 @@
                             <a href="" class="cartao__botao cartao__botao--ultra botao">Assinar plano</a>
                         </article>
                     </li>
-                    <li class="cartao cartao--mega">
-                        <h3 class="cartao__titulo">Mega</h3>
-                        <p class="cartao__preco"><em>R$ 1000</em></p>
-                        <article class="cartao__conteudo">
-                            <p class="cartao__texto">10 manutenções mensais</p>
-                            <p class="cartao__texto">App Web Solution</p>
-                            <p class="cartao__texto">2 sistemas operacionais</p>
-                            <a href="" class="cartao__botao cartao__botao--mega botao">Assinar plano</a>
-                        </article>
-                    </li>
                 </ul>
             </section>
-            <section class="contato container">
+            <section class="contato container" id="contato">
                 <h2 class="contato__titulo">Contato</h2>
                 <p>Entre em contato com a gente</p>
-                <a href="#" class="contato__botao botao">Entre em contato</a>
+                <label for="modalExemplo" class="contato__botao botao">Entre em contato</label>
+                <input type="checkbox" id="modalExemplo" class="checkboxModal">
+                <div class="modal">
+                    <label for="modalExemplo" class="fecharModal">X</label>
+                    <div class="conteudoModal">
+                        <h3 class="titulo_modal">Formulário de contato:</h3>
+                        <input id="email" type="text" name="email" placeholder="exemplo@exemplo.com"/>
+                        <input data-js="celular" id="celular"type="text" name="celular" placeholder="(99) 99999-9999"/>
+                        <input id="assunto" type="text" name="assunto" placeholder="Escreva o motivo do contato"/>
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua senha"/>
+                        <input id ="enviar"type="submit" name="acao"/>
+                    </div>
+                </div>
             </section>
-            <section class="institucional container">
+            <section class="institucional container" id="institucional">
                 <h2 class="institucional__titulo">Institucional</h2>
                 <div class="institucional__conteudo">
                     <div class="institucional__informacoes">
@@ -156,13 +168,16 @@
             </ul>
             <nav>
                 <ul class="rodape__navegacao">
-                    <li class="rodape__link"><a href="#">Sobre</a></li>
-                    <li class="rodape__link"><a href="#">Planos</a></li>
-                    <li class="rodape__link"><a href="#">Destaques</a></li>
-                    <li class="rodape__link"><a href="#">Institucional</a></li>
-                    <li class="rodape__link"><a href="#">Contato</a></li>
+                    <li class="rodape__link"><a href="#sobre">Sobre</a></li>
+                    <li class="rodape__link"><a href="#planos">Planos</a></li>
+                    <li class="rodape__link"><a href="#destaques">Destaques</a></li>
+                    <li class="rodape__link"><a href="#institucional">Institucional</a></li>
+                    <li class="rodape__link"><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </footer>
+        <script src="contato.js"></script>
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> -->
     </body>
 </html>
