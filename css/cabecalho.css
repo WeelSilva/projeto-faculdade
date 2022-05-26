@@ -52,7 +52,7 @@
 
 .cabecalho__link:hover {
     color:aqua;
-    animation: bounce 0,5s;
+    animation: bounce 1ms;
 }
 
 
