@@ -55,6 +55,11 @@
     color: aqua;
 }
 
+.cabecalho__navegacao:hover {
+    transform: skew(-10deg) ;
+    color:aqua;
+}
+
 @media screen and (min-width: 1024px) {
     .cabecalho {
         flex-direction: row;
