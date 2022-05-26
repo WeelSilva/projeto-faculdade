@@ -35,6 +35,29 @@
     margin-left: .7rem;
 }
 
+@keyframes bounce {
+    0%, 20% 60%, 100% {
+        -webkit-transforms: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transforms: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    88% {
+        -webkit-transforms: translateY(-18px);
+        transform: translateY(-18px);
+    }
+}
+
+.cabecalho__link {
+    background: #f18f01;
+}
+
+.cabecalho__link:hover {
+    animation: bounce;
+}
+
 @media screen and (min-width: 1024px) {
     .cabecalho {
         flex-direction: row;
