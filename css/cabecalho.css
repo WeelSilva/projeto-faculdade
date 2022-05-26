@@ -51,8 +51,9 @@
 }
 
 .cabecalho__link:hover {
-    color:aqua;
     animation: bounce 1s;
+    color:aqua;
+    
 }
 
 
