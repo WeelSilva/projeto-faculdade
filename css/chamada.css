@@ -30,26 +30,17 @@
 
 .chamada__botao {
     width: 100%;
-    transform-style: preserve-3d;
+    border-color: #f1c40f;
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
 }
-
-.chamada__botao:after {
-    top: -100%;
-    left: 0px;
-    width: 100%;
-    padding: 20px;
-    position: absolute;
-    background: aqua;
-    border-radius: 10px;
-    box-sizing: border-box;
-    content: 'Clique aqui';
-    transform-origin: left bottom;
-    transform: rotateX(90deg);
-}
-
 .chamada__botao:hover {
-    transform-origin: center bottom;
-    transform: rotateX(-90deg) translateY(100%);
+   background-position: 0;
 
 }
 /*.chamada__botao:hover {
