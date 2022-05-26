@@ -32,6 +32,11 @@
     width: 100%;
 }
 
+.chamada__botao:hover {
+    transform: skew(-10deg) ;
+    color:aqua;
+}
+
 @media screen and (min-width: 768px) {
     .chamada__texto {
         max-width: 600px;
