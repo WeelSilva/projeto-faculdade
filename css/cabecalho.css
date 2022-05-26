@@ -50,6 +50,11 @@
     }
 }
 
+.cabecalho__link:hover{
+    color:aqua;
+    animation: bouce;
+}
+
 
 @media screen and (min-width: 1024px) {
     .cabecalho {
