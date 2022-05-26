@@ -50,10 +50,6 @@
     }
 }
 
-.cabecalho__link {
-    background: #f18f01;
-}
-
 .cabecalho__link:hover {
     animation: bounce 1s;
 }
