@@ -30,9 +30,6 @@
 
 .chamada__botao {
     width: 100%;
-}
-
-.chamada__botao {
     transform-style: preserve-3d;
 }
 
@@ -46,7 +43,7 @@
     border-radius: 10px;
     box-sizing: border-box;
     content: 'Clique aqui';
-    transform-origin: left bottom ;
+    transform-origin: left bottom;
     transform: rotateX(90deg);
 }
 
