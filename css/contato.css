@@ -65,33 +65,38 @@
 
 
 .modal .conteudoModal h3{
+    padding: 5%;
     text-align: center;
-    color: #8a8a8a;
+    font-size: 200%;
+    color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.modal .conteudoModal.input[type="text"],
-.modal .conteudoModal.input[type="password"]{
-    width: 100%;
+.modal .conteudoModal input[type="text"],
+.modal .conteudoModal input[type="password"]{
+    width: 80%;
     height: 45px;
+    text-align: center;
     border:1px solid #ccc;
     padding-left: 10px;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .modal .conteudoModal input[type=submit]{
-    width:100%;
+    width:80%;
     height: 40px;
     cursor: pointer;
-    background-color:#8a8a8a;
+    background-color:#8a8a;
     color: white;
     border: 0;
     border-radius: 20px;
     transition: 1s; /* tempo para a transição */
+    margin: 4em;
 }
 
 .modal .conteudoModal input[type=submit]:hover{ /* Animação ao passar mouse encima do botão */
-    background-color: #494949; 
+    font-size: 150%;
+    background-color: rgb(81, 243, 189); 
 }
 
 .modal .conteudoModal input[type=text]:focus{
@@ -112,6 +117,6 @@
 
 .modal .fecharModal:hover {
     cursor: pointer;
-    color: red;
+    color: aquamarine;
 }
 
