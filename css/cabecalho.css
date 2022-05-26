@@ -55,7 +55,7 @@
 }
 
 .cabecalho__link:hover {
-    animation: bounce;
+    animation: bounce 1s;
 }
 
 @media screen and (min-width: 1024px) {
