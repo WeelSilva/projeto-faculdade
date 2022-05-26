@@ -50,9 +50,9 @@
     }
 }
 
-.cabecalho__link:hover{
+.cabecalho__link:hover {
     color:aqua;
-    animation: bouce 1s;
+    animation: bounce 1s;
 }
 
 
