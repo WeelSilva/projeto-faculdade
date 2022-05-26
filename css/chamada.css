@@ -29,7 +29,6 @@
 }
 
 .chamada__botao {
-    width: 100%;
     border-color: #f1c40f;
     color: #fff;
     background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
