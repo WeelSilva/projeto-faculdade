@@ -111,8 +111,8 @@
 
 .modal .fecharModal {
     position: absolute;
-    top: 20%;
-    right: 20%;
+    top: 50px;
+    right: 50px;
 }
 
 .modal .fecharModal:hover {
