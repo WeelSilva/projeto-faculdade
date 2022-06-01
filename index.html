@@ -18,7 +18,7 @@
         <link href="css/institucional.css" rel="stylesheet">
         <link href="css/rodape.css" rel="stylesheet">
         <link href="css/contato_modal.css" rel="styleshee">
-
+        
     </head>
     <body>
         <header class="cabecalho container">
@@ -205,16 +205,17 @@
             <section class="contato container" id="contato">
                 <h2 class="contato__titulo">Contato</h2>
                 <p>Entre em contato com a gente</p>
-                <label for="modalExemplo" class="contato__botao botao">Entre em contato</label>
-                <input type="checkbox" id="modalExemplo" class="checkboxModal">
-                <div class="modal">
-                    <label for="modalExemplo" class="fecharModal">X</label>
-                    <div class="conteudoModal">
+                <button onclick="showModal()" class="contato__botao botao">Entre em contato</button>
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <span onclick="hideModal()">&times;</span>
+                        <form>
                         <h3 class="titulo_modal">Formulário de contato:</h3>
-                        <input id="email" type="text" name="email" placeholder="exemplo@exemplo.com"/>
-                        <input data-js="celular" id="celular"type="text" name="celular" placeholder="(99) 99999-9999"/>
-                        <input id="assunto" type="text" name="assunto" placeholder="Escreva o motivo do contato"/>
-                        <input id ="enviar"type="submit" name="acao"/>
+                            <input id="email" type="text" name="email" placeholder="exemplo@exemplo.com" required/>
+                            <input data-js="celular" id="celular"type="text" name="celular" placeholder="(99) 99999-9999" required/>
+                            <input id="assunto" type="text" name="assunto" placeholder="Escreva o motivo do contato" required/>
+                            <button onclick="cadastrar()" id ="enviar"type="submit" name="acao">Enviar</button>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -253,7 +254,6 @@
             </nav>
         </footer>
         <script src="contato.js"></script>
-        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> -->
+        <script src="validform.js"></script>
     </body>
 </html>
