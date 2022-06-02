@@ -1,4 +1,7 @@
 var email = document.getElementById('email');
+var celular = document.getElementById('celular');
+var assunto = document.getElementById('assunto');
+
 
             email.addEventListener('focus',()=>{ // ao clicar para digitar e-mail muda a cor da borda
                 email.style.borderColor = "#494949";
@@ -7,7 +10,7 @@ var email = document.getElementById('email');
                email.style.borderColor = "#ccc";
            });
             
-var celular = document.getElementById('celular');
+
 
             celular.addEventListener('focus',()=>{
                 celular.style.borderColor= "#494949";
@@ -17,16 +20,6 @@ var celular = document.getElementById('celular');
             });
 
 
-var senha = document.getElementById('senha');
-
-            senha.addEventListener('focus',()=>{
-                senha.style.borderColor= "#494949";
-            });
-            senha.addEventListener('blur',()=>{
-                senha.style.borderColor= "#ccc";
-            });
-
-var assunto = document.getElementById('assunto');
 
             assunto.addEventListener('focus',()=>{
                 assunto.style.borderColor= "#494949";
@@ -59,7 +52,6 @@ const log = document.querySelector("#enviar");
 
 const masks = {
     celular (value){
-        console.log(value);
         return value
             .replace(/\D/g, '')
             .replace(/(\d{2})(\d)/,'($1)9')
@@ -72,6 +64,18 @@ document.querySelectorAll('input').forEach(($input) => {
     const field = $input.dataset.js
 
     $input.addEventListener('input', (e) => {
-        e.target.value = masks[field](e.target.value)
+        e.target.value = masks [field](e.target.value)
     }, false)
 })
+
+
+
+    function showModal(){
+        var element = document.getElementById("modal");
+        element.classList.add("show-modal");
+    }
+
+    function hideModal(){
+        var element = document.getElementById("modal");
+        element.classList.remove("show-modal")
+    }
