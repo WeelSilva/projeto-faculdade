@@ -1,2 +1,10 @@
-# projeto-apeperia
-Arquivos do projeto para a Apeperia
+# projeto-faculdade professor Abimal
+
+Alunos.
+
+Wellington 
+Erito
+Keniel
+Gilmarley
+João
+
