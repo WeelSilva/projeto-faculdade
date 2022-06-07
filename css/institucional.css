@@ -49,9 +49,7 @@
     display: block;
 }
 
-.institucional__video {
-    width: 100vw;
-}
+
 
 @media screen and (min-width: 768px) {
     .institucional__contato-email {
