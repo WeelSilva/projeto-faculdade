@@ -88,7 +88,18 @@
 }
 
 .manual-btn:hover {
+    transform: scale(1.5);
     background-color: yellow;
+}
+
+#voltar{
+    top:50%;
+    left:10%;
+}
+
+#next{
+    top: 50%;
+    right: 10%;
 }
 
 #radio1:checked ~ .first {
@@ -151,21 +162,8 @@
     margin: 20px auto;
 }
 
-@keyframes bounce {
-    0%, 20%, 60%, 100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-    88% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-}
+
 .destaques__botao:hover {
-    animation: bounce 1s;
+    transform: scale(1.2);
 
 }
