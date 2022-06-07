@@ -8,7 +8,7 @@
 .planos__titulo {
     color: var(--cinza-escuro);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: var(--montserrat);
     text-transform: uppercase;
     text-align: center;
@@ -97,8 +97,8 @@
     border-color: var(--planos-cartao-start);
     border-color: #56CCF2;
     color: #56CCF2;
-    background-image: -webkit-linear-gradient(45deg, #867638 50%, transparent 50%);
-    background-image: linear-gradient(45deg, #867638 50%, transparent 50%);
+    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
@@ -120,6 +120,7 @@
 }
 .cartao__botao--ultra:hover {
     background-position: 0;
+    
  
  }
 .cartao__botao--mega {
