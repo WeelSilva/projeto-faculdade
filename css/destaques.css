@@ -16,7 +16,7 @@
     margin-bottom: 2rem;
 }
 
-.destaques__painel {
+/*.destaques__painel {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,12 +37,121 @@
     font-weight: 700;
     font-size: 1.2rem;
     line-height: normal;
+}*/
+
+
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
 }
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.manual-btn {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0,5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: yellow;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.manual-navigation div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0,5s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: yellow ;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: yellow ;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: yellow ;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: yellow ;
+}
+
+
 
 .destaques__botao {
     color: var(--vermelho-forte);
     border-color: var(--vermelho-forte);
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
+.destaques__botao:hover {
     
+
+}
