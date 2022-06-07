@@ -106,6 +106,7 @@
 }
 .cartao__botao--start:hover {
     background-position: 0;
+    transform: scale(1.2);
 }
 .cartao__botao--ultra {
     border-color: var(--planos-cartao-ultra);
@@ -120,6 +121,7 @@
 }
 .cartao__botao--ultra:hover {
     background-position: 0;
+    transform: scale(1.2);
     
  
  }
@@ -136,6 +138,7 @@
 }
 .cartao__botao--mega:hover  {
     background-position: 0;
+    transform: scale(1.2);
  
  }
 
