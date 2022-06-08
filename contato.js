@@ -59,12 +59,6 @@ function successValidation(input){
 
 
 
-/*
-var email = document.getElementById('email');
-var celular = document.getElementById('celular');
-var assunto = document.getElementById('assunto');
-
-
             email.addEventListener('focus',()=>{ // ao clicar para digitar e-mail muda a cor da borda
                 email.style.borderColor = "#494949";
             });
