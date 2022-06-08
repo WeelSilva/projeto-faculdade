@@ -264,12 +264,38 @@
                 <div class="modal" id="modal">
                     <div class="modal-content">
                         <span onclick="hideModal()">&times;</span>
-                        <form>
-                        <h3 class="titulo_modal">Formulário de contato:</h3>
-                            <input id="email" type="text" name="email" placeholder="exemplo@exemplo.com" required/>
-                            <input data-js="celular" id="celular"type="text" name="celular" placeholder="(99) 99999-9999" required/>
-                            <input id="assunto" type="text" name="assunto" placeholder="Escreva o motivo do contato" required/>
-                            <button onclick="cadastrar()" id ="enviar"type="submit" name="acao">Enviar</button>
+                        <form id="form">
+                            <h3 class="titulo_modal">Formulário de contato:</h3>
+                            
+                            <div class="form-control">
+                                <label>E-mail</label>
+                                <input id="email" type="text" name="email" placeholder="exemplo@exemplo.com">
+                                <i><img class="img-success"src="./img/success-icon.svg" alt=""></i>
+                                <i><img class="img-error" src="./img/error-icon.svg" alt=""></i>
+            
+            
+                                 <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                                <label>Celular</label>
+                                <input type="text" id="celular" data-js="celular" name="celular" placeholder="(99) 99999-9999">
+                                <i><img class="img-success"src="./img/success-icon.svg" alt=""></i>
+                                <i><img class="img-error" src="./img/error-icon.svg" alt=""></i>
+            
+            
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                                <label>Assunto</label>
+                                <input id="assunto" type="text" name="assunto" placeholder="Escreva o motivo do contato">
+                                <i><img class="img-success"src="./img/success-icon.svg" alt=""></i>
+                                <i><img class="img-error" src="./img/error-icon.svg" alt=""></i>
+            
+            
+                                <small>Error message</small>
+                            </div>
+            
+                            <button id="enviar" type="submit">Enviar</button>
                         </form>
                     </div>
                 </div>

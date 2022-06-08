@@ -12,7 +12,7 @@
 .contato__titulo {
     color: var(--cinza-escuro);
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: var(--montserrat);
     text-transform: uppercase;
     text-align: center;
@@ -85,13 +85,13 @@
 
 .modal .modal-content {
     width: 60%;
-    height: 80%;
+    height: 75%;
     border: 1px solid lightgray;
     border-radius: 10px;
     background-color: white;
     box-shadow: 5px 5px 15px black;
     overflow: auto;
-    position: relative;
+    
 }
 
 
@@ -102,39 +102,102 @@
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.modal .modal-content input[type="email"],
-.modal .modal-content input[type="text"],
-.modal .modal-content input[type="password"]{
-    width: 80%;
-    height: 45px;
-    text-align: center;
-    border:1px solid #ccc;
-    padding-left: 10px;
-    margin: 20px;
-}
+
 
 .modal .modal-content button[type=submit]{
-    width:80%;
-    height: 40px;
+    width:75%;
+    height: 45px;
     cursor: pointer;
     background-color:#8a8a;
     color: white;
     border: 0;
     border-radius: 20px;
     transition: 1s; /* tempo para a transição */
-    margin-top: 60px;
+    margin-top: 30px;
 }
+
 
 .modal .modal-content button[type=submit]:hover{ /* Animação ao passar mouse encima do botão */
     background-color: rgb(81, 243, 189); 
 }
 
-.modal .modal-content input[type=email],
 .modal .modal-content input[type=text]:focus{
     outline: 0;
 }
-
+.modal .modal-content input[type=EMAIL]:focus{
+    outline: 0;
+}
 
 .modal .modal-content input[type=password]:focus{
     outline: 0;
+}
+
+.form-control input {
+    border:2px solid #ccc;
+    border-radius: 5px;
+    outline: 0;
+    position: relative;
+
+    
+    text-align: center;
+    font-size: 14px;
+
+    height: 20px;
+    width: 70%;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: gray;
+    padding: 0 30px 10px;
+    text-align: center;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error i .img-error {
+    visibility: visible;
+}
+
+.form-control.success i .img-success {
+    visibility: visible;
+    position: relative;
+    left: 25px;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+
+.form-control small {
+    visibility: hidden;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding-left: 25px;
+
+    font-size: 14px;
+}
+
+.form-control i {
+    position: relative;
+    visibility: hidden;
+    top: 5px;
+    right: 15%;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
 }
