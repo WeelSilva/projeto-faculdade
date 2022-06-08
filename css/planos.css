@@ -17,6 +17,7 @@
 }
 
 .planos__cartoes {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,8 +98,6 @@
     border-color: var(--planos-cartao-start);
     border-color: #56CCF2;
     color: #56CCF2;
-    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
@@ -112,8 +111,7 @@
     border-color: var(--planos-cartao-ultra);
     border-color: #B04CD9;
     color: #B04CD9;
-    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
@@ -123,14 +121,11 @@
     background-position: 0;
     transform: scale(1.2);
     
- 
  }
 .cartao__botao--mega {
     border-color: var(--planos-cartao-mega);
     border-color: #E33B3B;
-    color: #E33B3B;
-    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    color: #E33B3B;   
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
@@ -159,4 +154,3 @@
         max-width: 300px;
     }
 }
-/*.teste 
