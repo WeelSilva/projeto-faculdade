@@ -1,3 +1,65 @@
+const form = document.getElementById('form')
+const email = document.getElementById('email')
+const celular = document.getElementById('celular')
+const assunto = document.getElementById('assunto')
+
+form.addEventListener('submit',(e)=> {
+    e.preventDefault()
+
+    checkInputs()
+})
+
+function checkInputs(){
+
+    const emailValue = email.value.trim()
+    const celularValue = celular.value.trim()
+    const assuntoValue = assunto.value.trim()
+
+
+    if(emailValue === ''){
+        //mostrar o erro
+        //adicionar a classe error
+        errorValidation(email, 'Preencha esse campo')
+    } else if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1){
+        errorValidation(email, 'Insira um e-mail válido')
+    } else {
+        //adicionar a classe success
+        successValidation(email)
+    }
+
+    if(celularValue === ''){
+        errorValidation(celular, 'Preencha esse campo')
+    } else if (celularValue > 1){
+        errorValidation(celular, 'Insira um celular válido')
+    } else {
+        successValidation(celular)
+    }
+
+    if(assuntoValue === ''){
+        errorValidation(assunto, 'Preencha esse campo')
+    } else{
+        successValidation(assunto)
+    }
+}
+
+function errorValidation(input, message){
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small')
+
+    small.innerText = message
+
+    formControl.className = 'form-control error'
+}
+
+function successValidation(input){
+    const formControl = input.parentElement;
+
+    formControl.className = 'form-control success'
+}
+
+
+
+/*
 var email = document.getElementById('email');
 var celular = document.getElementById('celular');
 var assunto = document.getElementById('assunto');
@@ -29,24 +91,24 @@ var assunto = document.getElementById('assunto');
             });
 
 /* registro dos valores inseridos */
-
+/*
 const log = document.querySelector("#enviar");
             log.addEventListener("click", function(e) {
 
                 e.preventDefault();// para o envio do formulário
-            const email = document.querySelector("#email");
-            const value = email.value; // criando variável VALUE para acessar o .VALUE da variável EMAIL
-            console.log(`E-mail:${email.value}`); // usando template string
+            const logemail = document.querySelector("#email");
+            const logvalue = logemail.value; // criando variável VALUE para acessar o .VALUE da variável EMAIL
+            console.log(`E-mail:${logvalue}`); // usando template string
 
-            const celular = document.querySelector("#celular");
-            console.log("Celular:" + celular.value); // acessando o .value da variável CELULAR sem criar outra variável
+            const logcelular = document.querySelector("#celular");
+            console.log("Celular:" + logcelular.value); // acessando o .value da variável CELULAR sem criar outra variável
 
-            const assunto = document.querySelector("#assunto");
-            console.log("Assunto:" + assunto.value);
+            const logassunto = document.querySelector("#assunto");
+            console.log("Assunto:" + logassunto.value);
 
             });
 
-
+*/
 
 /* Máscara para a escrita de alguns campos */
 
@@ -79,3 +141,4 @@ document.querySelectorAll('input').forEach(($input) => {
         var element = document.getElementById("modal");
         element.classList.remove("show-modal")
     }
+
