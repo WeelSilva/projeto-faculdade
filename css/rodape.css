@@ -26,9 +26,18 @@
     color: var(--branco);
     text-align: center;
     line-height: 3;
+    border-color: #ffffff;
+    color: #ffffff;   
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
 }
-
-
+.rodape__navegacao:hover  {
+    background-position: 0;
+    transform: scale(1.2);
+ }
+   
 .rodape__link {
     display: inline-block;
 
