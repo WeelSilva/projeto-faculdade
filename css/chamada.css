@@ -30,9 +30,11 @@
 
 .chamada__botao {
     border-color: #f1c40f;
+    border-width: 0.10em;
     color: #fff;
+    font-size: 1.25em;
     background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1c40f 40%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
