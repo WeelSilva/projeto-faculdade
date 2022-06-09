@@ -1,4 +1,4 @@
-# projeto-faculdade professor Abimal
+# projeto-faculdade professor Abimael
 
 Alunos.
 
