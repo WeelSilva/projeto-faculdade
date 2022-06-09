@@ -33,7 +33,7 @@
         <link href="css/rodape.css" rel="stylesheet">
         <link href="css/contato_modal.css" rel="styleshee">
         <script src=" https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
-        
+        <link href="contato.php">
     </head>
     <body>
         <header class="cabecalho container">
