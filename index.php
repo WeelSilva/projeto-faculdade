@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:index.php
 <?php
     
     if(isset($_POST['submit'])){
@@ -265,3 +266,265 @@
     </body>
     
 </html>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Home | Web Solution</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link href="css/cabecalho.css" rel="stylesheet">
+        
+        <link href="css/chamada.css" rel="stylesheet">
+        <link href="css/destaques.css" rel="stylesheet">
+        <link href="css/diferenciais.css" rel="stylesheet">
+        <link href="css/sobre.css" rel="stylesheet">
+        <link href="css/planos.css" rel="stylesheet">
+        <link href="css/contato.css" rel="stylesheet">
+        <link href="css/institucional.css" rel="stylesheet">
+        <link href="css/rodape.css" rel="stylesheet">
+        <link href="css/contato_modal.css" rel="styleshee">
+        
+    </head>
+    <body>
+        <header class="cabecalho container">
+            <img src="img/logo-web.png" alt="Logo da Web Solution" class="cabecalho__logo">
+            <nav class="cabecalho__navegacao">
+                <ul>
+                    <li class="cabecalho__link"><a href="#destaques">Destaques</a></li>
+                    <li class="cabecalho__link"><a href="#sobre">Sobre</a></li>
+                    <li class="cabecalho__link"><a href="#planos">Planos</a></li>
+                    <li class="cabecalho__link"><a href="#contato">Contato</a></li>
+                    <li class="cabecalho__link"><a href="#institucional">Institucional</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="chamada container">
+                <h1 class="chamada__titulo">Aplicativos Na Medida</h1>
+                <p class="chamada__texto">Web Solution tem um jeito inovador de comparar e montar aplicativos para pequenas e médias empresas.</p>
+                <a href="#planos" class="chamada__botao botao">Conheça os planos</a>
+            </section>
+            <section class="destaques container" id="destaques">
+                <h2 class="destaques__titulo">Destaques</h2>
+  <!--<!DOCTYPE html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#mycarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="img/o-que-e-um-app.png" alt="Produtos" width="560" height="400">
+        <div class="carousel-caption">
+          <h4><b>PRODUTOS E SERVIÇOS</b></h4>
+          <p>A Evolução de Como as Pessoas Consomem Serviço e Produtos na Palma da Mão.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://storage.googleapis.com/meetime-blog/wp-content/uploads/2020/08/Como-fazer-um-plano-de-neg%C3%B3cios-de-uma-empresa-da-capa-aos-contatos.png" alt="" width="560" height="300">
+        <div class="carousel-caption">
+          <h3><b>PLANEJAMENTO</b></h3>
+          <p>Melhore os Resultado de Sua Empresa com o Melhor da Tecnologia Corporativa.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVfzDLrzksTdyHcRPhy6a5eL8KBefwJxtQxw&usqp=CAU" alt="Notificação" width="560" height="400">
+        <div class="carousel-caption">
+          <h3><b>NOTIFICAÇÕA PUSH?</b></h3>
+          <p>Estimule o Acesso de Usuários e Clientes no Seu App Com Essa Ferramenta de Engajamento.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4InFSYu0YAd0arTnFLPsGpMMIisAj_MtVnA&usqp=CAU" alt="Dinheiro" width="560" height="400">
+        <div class="carousel-caption">
+          <h3><b>GANHAR DINHEIRO COM APLICATIVOS!</b></h3>
+          <p>Criar e Vender Apps, Anúncios, Downloads e Mais! Como Rentabilizar Seu Negócio.</p>
+        </div>
+      </div>
+
+      <div class="item">
+          <img src="img/dicas-fotografia.png" alt="Dicas de Fotografia" width="560" height="400">
+          <div class="carousel-caption">
+          <h3><b>Dicas de Fotografía</b></h3>
+          <p>5 Dicas Essenciais Para Ser um Fotógrafo Mais Eficiente.</p>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+                
+                </a>
+                <a href="#" class="destaques__botao botao">Receber destaques por email</a>
+            </section>
+            <section class="diferenciais container">
+                <ul class="diferenciais__lista">
+                    <li class="diferenciais__item diferenciais__item--tempo">
+                        <h2 class="item__titulo">Tempo</h2>
+                        <p class="item__texto">Tempo é importante! Trabalhamos em ritmo acelerado, atendendo rigorosamente aos prazos.</p>
+                    </li>
+                    <li class="diferenciais__item diferenciais__item--foco">
+                        <h2 class="item__titulo">Foco</h2>
+                        <p class="item__texto">Focamos no empreendimento! Oferecemos serviços de qualidade com preços acessíveis.</p>
+                    </li>
+                    <li class="diferenciais__item diferenciais__item--especialistas">
+                        <h2 class="item__titulo">Especialistas</h2>
+                        <p class="item__texto">Equipe experiente e especializada! Testamos todos os produtos antes do lançamento.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="sobre container" id="sobre">
+                <div class="sobre__conteudo">
+                    <h2 class="sobre__titulo">Sobre</h2>
+                    <p class="sobre__texto">Criamos aplicativos personalizados para <strong class="sobre__texto--destaque">todas as pessoas</strong>!</p>
+                    <p class="sobre__texto">
+                        A manutenção de um aplicativo não pode ser um custo extra para o cliente, Na Web Solution você assina nosso serviço e a manutenção já está inclusa. Assim, você não se preocupa com manutenção, é tudo por nossa conta.
+                    </p>
+                    <p class="sobre__texto sobre__texto--destaque sobre__texto--divisao">
+                        Conte com uma equipe especializada e exclusiva pra projetos incríveis em qualquer plataforma.
+                    </p>
+                    <ul class="sobre__plataformas">
+                        <li><img src="img/android.png" alt="Ícone do Android"></li>
+                        <li><img src="img/apple.png" alt="Ícone da Apple"></li>
+                        <li><img src="img/windowsphone.png" alt="Ícone da Microsoft"></li>
+                    </ul>
+                    <p class="sobre__texto">Desenvolvemos aplicativos para todas as plataformas</p>
+                </div>
+                <img src="img/sobre-apeperia.png" alt="Sobre a Apeperia" class="sobre__imagem">
+            </section>
+            <section class="planos container" id="planos">
+                <h2 class="planos__titulo">Planos</h2>
+                <ul class="planos__cartoes">
+                    <li class="cartao cartao--start">
+                        <h3 class="cartao__titulo">Start</h3>
+                        <article class="cartao__conteudo">
+                            <p class="cartao__preco"><em>R$ 500</em></p>
+                            <p class="cartao__texto">5 manutenções mensais</p>
+                            <p class="cartao__texto">App Web Solution</p>
+                            <p class="cartao__texto">1 sistema operacional</p>
+                            <a href="" class="cartao__botao cartao__botao--start botao">Assinar plano</a>
+                        </article>
+                    </li>
+                    <li class="cartao cartao--ultra">
+                        <h3 class="cartao__titulo">Ultra</h3>
+                        <article class="cartao__conteudo">
+                            <p class="cartao__preco"><em>R$ 1500</em></p>
+                            <p class="cartao__texto">20 manutenções mensais</p>
+                            <p class="cartao__texto">App Web Solution</p>
+                            <p class="cartao__texto">4 sistemas operacionais</p>
+                            <p class="cartao__texto">24h de atendimento</p>
+                            <a href="" class="cartao__botao cartao__botao--ultra botao">Assinar plano</a>
+                        </article>
+                    <li class="cartao cartao--mega">
+                        <h3 class="cartao__titulo">Mega</h3>
+                        <p class="cartao__preco"><em>R$ 1000</em></p>
+                        <article class="cartao__conteudo">
+                            <p class="cartao__texto">10 manutenções mensais</p>
+                            <p class="cartao__texto">App Web Solution</p>
+                            <p class="cartao__texto">2 sistemas operacionais</p>
+                            <a href="" class="cartao__botao cartao__botao--mega botao">Assinar plano</a>
+                        </article>
+                    </li>
+                    
+                    </li>
+                </ul>
+            </section>
+            <section class="contato container" id="contato">
+                <h2 class="contato__titulo">Contato</h2>
+                <p>Entre em contato com a gente</p>
+                <button onclick="showModal()" class="contato__botao botao">Entre em contato</button>
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <span onclick="hideModal()">&times;</span>
+                        <form>
+                        <h3 class="titulo_modal">Formulário de contato:</h3>
+                            <input id="email" type="text" name="email" placeholder="exemplo@exemplo.com" required/>
+                            <input data-js="celular" id="celular"type="text" name="celular" placeholder="(99) 99999-9999" required/>
+                            <input id="assunto" type="text" name="assunto" placeholder="Escreva o motivo do contato" required/>
+                            <button onclick="cadastrar()" id ="enviar"type="submit" name="acao">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="institucional container" id="institucional">
+                <h2 class="institucional__titulo">Institucional</h2>
+                <div class="institucional__conteudo">
+                    <div class="institucional__informacoes">
+                        <p class="institucional__descricao">Um pouco mais sobre a Web Solution</p>
+                    <address class="institucional__endereco">
+                        Nosso escritrorio fica localizado na Av Paulista, 31</br>
+                        Jd Europa, São Paulo
+                        <article class="institucional__contato">
+                            <p><a href="tel:+5511987123456" class="institucional__contato-telefone">(11) 98712-3456</a> ou <a href="mailto:contato@websolution.com" class="institucional__contato-email">contato@websolution.com</a></p>
+                        </article>
+                    </address>
+                    </div>
+                    <video src="img/formacao-java.mp4" class="institucional__video" controls></video>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape container">
+            <img src="img/logo-web.png" alt="Logo da Apeperia" class="rodape__logo">
+            <ul class="rodape__social">
+                <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt="Ícone do Facebook"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="img/twitter.png" alt="Ícone do twitter"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="img/instagram.png" alt="Ícone do Instagram"></a></li>
+            </ul>
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li class="rodape__link"><a href="#destaques">Destaques</a></li>
+                    <li class="rodape__link"><a href="#sobre">Sobre</a></li>
+                    <li class="rodape__link"><a href="#planos">Planos</a></li>
+                    <li class="rodape__link"><a href="#contato">Contato</a></li>
+                    <li class="rodape__link"><a href="#institucional">Institucional</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="contato.js"></script>
+        <script src="validform.js"></script>
+    </body>
+
+</html>
+>>>>>>> Stashed changes:index.html
